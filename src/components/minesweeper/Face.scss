@@ -1,0 +1,22 @@
+@import "../../styles/index.scss";
+
+.Face {
+  @include borders;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  width: 52px;
+  font-size: 35px;
+
+  @include buttons;
+
+  // Disable highlighting of emjoji on double click
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.Face:hover {
+  cursor: pointer;
+}
